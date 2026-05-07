@@ -9,14 +9,14 @@ from typing import NotRequired, Self, TypedDict
 
 from aiohttp import __version__ as aiohttpversion
 
-SUPERVISOR_VERSION = "2025.11.4"
+SUPERVISOR_VERSION = "2025.11.4.2"
 SERVER_SOFTWARE = f"HomeAssistantSupervisor/{SUPERVISOR_VERSION} aiohttp/{aiohttpversion} Python/{systemversion[0]}.{systemversion[1]}"
 
 DOCKER_PREFIX: str = "hassio"
 OBSERVER_DOCKER_NAME: str = f"{DOCKER_PREFIX}_observer"
 SUPERVISOR_DOCKER_NAME: str = f"{DOCKER_PREFIX}_supervisor"
 
-URL_HASSIO_ADDONS = "https://github.com/home-assistant/addons"
+URL_HASSIO_ADDONS = "https://github.com/iHost-Open-Source-Project/ha-addons"
 URL_HASSIO_APPARMOR = "https://version.home-assistant.io/apparmor_{channel}.txt"
 URL_HASSIO_VERSION = "https://raw.githubusercontent.com/iHost-Open-Source-Project/haos-version/main/{channel}.json"
 
